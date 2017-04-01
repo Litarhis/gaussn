@@ -1,12 +1,12 @@
 # gaussn
 
-A test project for simple Golang code.
+A test project for simple Go code.
 
 ### Gaussian Noise for png
 
-The code creates an executable that produces a PNG image with noise following the Gaussian Distribution
+The code creates an executable that produces a PNG image with noise, following the Gaussian Distribution
 
-##### Instrictions
+##### Instructions
 ```
 $ cd gaussn
 $ go build
