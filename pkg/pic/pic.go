@@ -17,16 +17,17 @@ func Show(f func(int, int) [][]uint8) []byte {
 		for x := 0; x < dx; x++ {
 			v := data[y][x]
 			i := y*m.Stride + x*4
-			m.Pix[i] = v
-			m.Pix[i+1] = v
-			m.Pix[i+2] = 255
-			m.Pix[i+3] = 255
+			m.Pix[i] = 0   //----------
+			m.Pix[i+1] = 0 // Greyscale
+			m.Pix[i+2] = 0 //----------
+
+			m.Pix[i+3] = v // density
 		}
 	}
-	return ShowImage(m)
+	return Encode2Png(m)
 }
 
-func ShowImage(m image.Image) []byte {
+func Encode2Png(m image.Image) []byte {
 	var buf bytes.Buffer
 	err := png.Encode(&buf, m)
 	if err != nil {
