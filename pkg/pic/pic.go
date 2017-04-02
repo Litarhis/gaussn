@@ -6,15 +6,11 @@ import (
 	"image/png"
 )
 
-func Show(f func(int, int) [][]uint8) []byte {
-	const (
-		dx = 256
-		dy = 256
-	)
-	data := f(dx, dy)
-	m := image.NewNRGBA(image.Rect(0, 0, dx, dy))
-	for y := 0; y < dy; y++ {
-		for x := 0; x < dx; x++ {
+func Show(f func(int, int) [][]uint8, width int, height int) []byte {
+	data := f(width, height)
+	m := image.NewNRGBA(image.Rect(0, 0, width, height))
+	for y := 0; y < height; y++ {
+		for x := 0; x < width; x++ {
 			v := data[y][x]
 			i := y*m.Stride + x*4
 			m.Pix[i] = 0   //----------

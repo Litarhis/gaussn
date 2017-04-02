@@ -24,7 +24,13 @@ func picture(dx, dy int) [][]uint8 {
 }
 
 func main() {
-	err := ioutil.WriteFile("gaussianNoise.png", pic.Show(picture), 0644)
+	var width, height int
+	fmt.Print("Enter width of the image: ")
+	fmt.Scanln(&width)
+
+	fmt.Print("Enter height of the image: ")
+	fmt.Scanln(&height)
+	err := ioutil.WriteFile("gaussianNoise.png", pic.Show(picture, width, height), 0644)
 
 	if err != nil {
 		panic(err)
