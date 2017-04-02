@@ -3,10 +3,11 @@ package main
 // imports
 import (
 	"fmt"
-	"gaussn/pkg/pic"
 	"io/ioutil"
 	"math/rand"
 	"time"
+
+	"github.com/litarhis/gaussn/pic"
 )
 
 // end imports
