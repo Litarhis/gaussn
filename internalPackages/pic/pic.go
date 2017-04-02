@@ -1,4 +1,4 @@
-package pic // import "github.com/litarhis/gaussn/pic"
+package pic // import "github.com/litarhis/gaussn/internalPackages/pic"
 
 import (
 	"bytes"

@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/litarhis/gaussn/pic"
+	"github.com/litarhis/gaussn/internalPackages/pic"
 )
 
 // end imports
