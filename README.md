@@ -10,7 +10,6 @@ The code creates an executable that produces a PNG image with noise, following t
 Open your Go workspace, defined by `$GOPATH`.
 
 ```
-$ cd src
 $ go get github.com/litarhis/gaussn
 $ gaussn.exe // if you haven't added $GOPATH/bin as an environment variable, navigate to $GOPATH/bin and execute gauss.exe
 ```
