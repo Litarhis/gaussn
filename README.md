@@ -11,10 +11,7 @@ Open your Go workspace, defined by `$GOPATH`.
 
 ```
 $ cd src
-$ mkdir github.com/litarhis // if github.com already exists just create a directory named litarhis in it
-$ git clone https://github.com/Litarhis/gaussn.git
-$ cd gaussn
-$ go install
+$ go get github.com/litarhis/gaussn
 $ gaussn.exe // if you haven't added $GOPATH/bin as an environment variable, navigate to $GOPATH/bin and execute gauss.exe
 ```
 Pass the width and height of your preference.
